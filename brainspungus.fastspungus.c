@@ -42,7 +42,7 @@ assign *m *r0 - 3
 break;
 case 5
 assign p0 realloc(m,*r0)
-assign *r0 p0 == NULL
+assign *r0 p0 != NULL
 switch( *r0
 case 0
 break;
@@ -52,7 +52,7 @@ break;
 }
 break;
 }
-assign *m t + 3
+assign *m *m + 3
 declare return (void*)m
 }
 fastspungus
