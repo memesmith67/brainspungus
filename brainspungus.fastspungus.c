@@ -9,8 +9,7 @@ declare int i2
 declare int r0
 declare int r1
 declare int t
-declare int* m
-assign m *(int**)i
+assign m (int*)i
 assign t *m
 assign i0 m + t
 assign i1 i0 + 1
@@ -18,9 +17,9 @@ assign i2 i0 + 2
 assign r0 *i0
 assign r1 *i1
 switch( i2
-case 0
+case 0 
 assign n m + *r1
-assign *m *n
+assign *n *r2
 break;
 case 1
 assign *r1 *r1 - *r2
@@ -45,11 +44,12 @@ switch( *r0
 case 0
 break;
 default:
-assign *m p0
+assign m p0
 break;
 }
 break;
 }
 assign *m t + 3
+declare return (void*)m
 }
 fastspungus
