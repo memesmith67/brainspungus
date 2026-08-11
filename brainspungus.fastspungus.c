@@ -1,5 +1,6 @@
+//copyright john morris beck 2026 gpl2
 fastspungus
-function brainspungus m copyright john morris beck 2026 gpl2
+function brainspungus m
 declare int j
 assign j **(int**)m + 1
 declare int* n
@@ -22,22 +23,22 @@ assign j **(int**)m + 2
 assign n *(int**)m + j
 assign a *n
 break;
-case 1 -
+case 1
 assign a a - b
 break;
-case 2 <
+case 2
 assign a a < b
 break;
-case 3 m
+case 3
 assign n *(int**)m + b
 assign j **(int**)m
 assign n *(int**)m + a
 assign * j
 break;
-case 4 x
+case 4
 assign **(int**)m a - 3
 break;
-case 5 a
+case 5
 fastspungus
 n=realloc(m,a);
 fastspungus
