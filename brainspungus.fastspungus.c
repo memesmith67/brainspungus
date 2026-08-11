@@ -6,16 +6,21 @@ declare int* p1
 declare int i0
 declare int i1
 declare int i2
-declare int r0
-declare int r1
+declare int* r0
+declare int* r1
 declare int t
+declare int* m
+declare int* n
 assign m (int*)i
 assign t *m
-assign i0 m + t
-assign i1 i0 + 1
-assign i2 i0 + 2
-assign r0 *i0
-assign r1 *i1
+assign p0 m + t
+assign i0 *p0
+assign p0 p0 + 1
+assign i1 *p0
+assign p0 p0 + 1
+assign i2 *p0
+assign r0 m + i0
+assign r1 m + i1
 switch( i2
 case 0 
 assign n m + *r0
