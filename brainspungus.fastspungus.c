@@ -13,7 +13,7 @@ declare int r0
 declare int r1
 declare int t
 declare int* m
-assign m *(int** i)
+assign m *(int**)i
 assign t *m
 assign i0 m + t
 assign i1 i0 + 1
