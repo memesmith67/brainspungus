@@ -40,16 +40,6 @@ break;
 case 4
 assign *m *r0 - 3
 break;
-case 5
-assign p0 realloc(m,*r0)
-assign *r0 p0 != NULL
-switch( *r0
-case 0
-break;
-default:
-assign m p0
-break;
-}
 break;
 }
 assign *m *m + 3
