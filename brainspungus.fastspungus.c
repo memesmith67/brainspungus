@@ -36,9 +36,7 @@ case 4
 assign *m *r0 - 3
 break;
 case 5
-fastspungus
-p0=realloc(m,*r0);
-fastspungus
+assign p0 realloc(m,*r0)
 assign *r0 p0 == null
 switch( *r0
 case 0
