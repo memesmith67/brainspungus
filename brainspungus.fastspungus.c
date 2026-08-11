@@ -1,11 +1,8 @@
 //copyright john morris beck 2026 gpl2
 fastspungus
 function brainspungus i
-declare int j
 declare int* p0
 declare int* p1
-declare int a
-declare int b
 declare int i0
 declare int i1
 declare int i2
@@ -43,10 +40,9 @@ case 5
 fastspungus
 p0=realloc(m,*r0);
 fastspungus
-assign j p0 == null
-switch( j
+assign *r0 p0 == null
+switch( *r0
 case 0
-assign *r0 0
 break;
 default:
 assign *m p0
