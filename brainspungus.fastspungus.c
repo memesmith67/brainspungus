@@ -18,14 +18,14 @@ assign r0 *i0
 assign r1 *i1
 switch( i2
 case 0 
-assign n m + *r1
-assign *n *r2
+assign n m + *r0
+assign *n *r1
 break;
 case 1
-assign *r1 *r1 - *r2
+assign *r0 *r0 - *r1
 break;
 case 2
-assign *r1 *r1 < *r2
+assign *r0 *r0 < *r1
 break;
 case 3
 assign p0 m + *r0
@@ -37,7 +37,7 @@ assign *m *r0 - 3
 break;
 case 5
 assign p0 realloc(m,*r0)
-assign *r0 p0 == null
+assign *r0 p0 == NULL
 switch( *r0
 case 0
 break;
