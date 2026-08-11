@@ -1,61 +1,59 @@
 //copyright john morris beck 2026 gpl2
 fastspungus
-function brainspungus m
+function brainspungus i
 declare int j
-assign j **(int**)m + 1
-declare int* n
-assign n n + j
-assign j *n
-assign n n + j
+declare int* p0
+declare int* p1
 declare int a
-assign a *n
-assign j **(int**)m + 2
-assign n n + j
-assign j *n
-assign n n + j
 declare int b
-assign b *n
-assign n *(int**)m + **(int**)m
-assign j *n
-switch( j
-case 0 b
-assign j **(int**)m + 2
-assign n *(int**)m + j
-assign a *n
+declare int i0
+declare int i1
+declare int i2
+declare int r0
+declare int r1
+declare int t
+declare int* m
+assign m *(int** i)
+assign t *m
+assign i0 m + t
+assign i1 i0 + 1
+assign i2 i0 + 2
+assign r0 *i0
+assign r1 *i1
+switch( i2
+case 0
+assign n m + *r1
+assign *m *n
 break;
 case 1
-assign a a - b
+assign *r1 *r1 - *r2
 break;
 case 2
-assign a a < b
+assign *r1 *r1 < *r2
 break;
 case 3
-assign n *(int**)m + b
-assign j **(int**)m
-assign n *(int**)m + a
-assign * j
+assign p0 m + *r0
+assign p1 m + *r1
+assign *p0 *p1
 break;
 case 4
-assign **(int**)m a - 3
+assign *m *r0 - 3
 break;
 case 5
 fastspungus
-n=realloc(m,a);
+p0=realloc(m,*r0);
 fastspungus
-assign j n == null
+assign j p0 == null
 switch( j
 case 0
-declare int* o
-assign o *m + a
-assign *o 0
+assign *r0 0
 break;
 default:
-assign *m n
+assign *m p0
 break;
 }
 break;
 }
-assign j **(int**)m + 3
-assign **(int**)m j
+assign *m t + 3
 }
 fastspungus
