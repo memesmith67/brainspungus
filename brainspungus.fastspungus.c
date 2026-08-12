@@ -9,7 +9,6 @@ declare int i2
 declare int* r0
 declare int* r1
 declare int t
-declare int* m
 declare int* n
 declare int j
 declare int k
@@ -43,7 +42,7 @@ set r0 int j
 break;
 case int 3
 get j int* r0
-get i int* r1
+get k int* r1
 assign p0 int* m + int j
 assign p1 int* m + int k
 get j int* p1
