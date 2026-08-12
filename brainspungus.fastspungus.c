@@ -22,25 +22,25 @@ get i2 p0
 assign r0 m + i0
 assign r1 m + i1
 switch i2
-case 0
+case 'b'
 get j r0
 assign n m + j
 get j r1
 set n j
 break;
-case 1
+case '-'
 get j r0
 get k r1
 assign j j - k
 set r0 j
 break;
-case 2
+case '<'
 get j r0
 get k r1
 assign j j < k
 set r0 j
 break;
-case 3
+case 'm'
 get j r0
 get k r1
 assign p0 m + j
@@ -48,7 +48,7 @@ assign p1 m + k
 get j p1
 set p0 j
 break;
-case 4
+case 'x'
 get j r0
 assign j j - 3
 set m j
