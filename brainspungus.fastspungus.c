@@ -31,7 +31,7 @@ get j r1
 set p0 j
 break;
 fastspungus
-case '-'
+case '-':
 fastspungus
 get j r0
 get k r1
@@ -62,6 +62,5 @@ fastspungus
 get j t
 assign j j + 3
 set t j
-declare return m
 }
 fastspungus
