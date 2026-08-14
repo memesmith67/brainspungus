@@ -29,7 +29,7 @@ get j r0
 assign p0 m + j
 get j r1
 set p0 j
-break;
+break
 fastspungus
 case '-':
 fastspungus
@@ -37,7 +37,7 @@ get j r0
 get k r1
 assign j j - k
 set r0 j
-break;
+break
 fastspungus
 case '<':
 fastspungus
@@ -45,7 +45,7 @@ get j r0
 get k r1
 assign j j < k
 set r0 j
-break;
+break
 fastspungus
 case 'm':
 fastspungus
@@ -55,12 +55,12 @@ assign p0 m + j
 assign p1 m + k
 get j p1
 set p0 j
-break;
+break
 fastspungus
-}
+end
 fastspungus
 get j t
 assign j j + 3
 set t j
-}
+end
 fastspungus
